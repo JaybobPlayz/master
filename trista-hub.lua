@@ -3,76 +3,42 @@
 
 -- Instances:
 
-local main = Instance.new("ScreenGui")
-local TextButton = Instance.new("TextButton")
+local Aimlock = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
+local title = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local buttons = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Aimlock_2 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local aimlockStatus = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local hf = Instance.new("TextLabel")
+local status = Instance.new("TextLabel")
+local notice = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local title_2 = Instance.new("TextLabel")
+local line = Instance.new("TextLabel")
+local warning1 = Instance.new("TextLabel")
+local warning2 = Instance.new("TextLabel")
+local warning3 = Instance.new("TextLabel")
 
 --Properties:
 
+Aimlock.Name = "Aimlock"
+Aimlock.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Aimlock.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
 main.Name = "main"
-main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-main.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+main.Parent = Aimlock
+main.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+main.BorderSizePixel = 0
+main.Position = UDim2.new(0.814652026, 0, 0.292919695, 0)
+main.Size = UDim2.new(0, 245, 0, 468)
 
-TextButton.Parent = main
-TextButton.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.471988231, 0, -0.0390625075, 0)
-TextButton.Size = UDim2.new(0, 119, 0, 30)
-TextButton.Font = Enum.Font.GothamBold
-TextButton.Text = "Open"
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextSize = 31.000
-TextButton.TextWrapped = true
-
-UICorner.Parent = TextButton
-
--- Scripts:
-
-local function QGVSZD_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
-
-	script.Parent.MouseButton1Click:Connect(function(player)
-		-- Gui to Lua
-		-- Version: 3.2
-
-		-- Instances:
-
-		local Aimlock = Instance.new("ScreenGui")
-		local main = Instance.new("Frame")
-		local UICorner = Instance.new("UICorner")
-		local title = Instance.new("TextLabel")
-		local UICorner_2 = Instance.new("UICorner")
-		local buttons = Instance.new("Frame")
-		local UICorner_3 = Instance.new("UICorner")
-		local ScrollingFrame = Instance.new("ScrollingFrame")
-		local Aimlock_2 = Instance.new("TextButton")
-		local UICorner_4 = Instance.new("UICorner")
-		local aimlockStatus = Instance.new("Frame")
-		local UICorner_5 = Instance.new("UICorner")
-		local hf = Instance.new("TextLabel")
-		local status = Instance.new("TextLabel")
-		local notice = Instance.new("Frame")
-		local UICorner_6 = Instance.new("UICorner")
-		local title_2 = Instance.new("TextLabel")
-		local line = Instance.new("TextLabel")
-		local warning1 = Instance.new("TextLabel")
-		local warning2 = Instance.new("TextLabel")
-		local warning3 = Instance.new("TextLabel")
-
-		--Properties:
-
-		Aimlock.Name = "Aimlock"
-		Aimlock.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-		Aimlock.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-		main.Name = "main"
-		main.Parent = Aimlock
-		main.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
-		main.BorderSizePixel = 0
-		main.Position = UDim2.new(0.814652026, 0, 0.292919695, 0)
-		main.Size = UDim2.new(0, 245, 0, 468)
-
-		UICorner.Parent = main
+UICorner.Parent = main
 
 		title.Name = "title"
 		title.Parent = main
@@ -231,30 +197,27 @@ local function QGVSZD_fake_script() -- TextButton.LocalScript
 		warning3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		warning3.BackgroundTransparency = 1.000
 		warning3.BorderSizePixel = 0
-		warning3.Position = UDim2.new(0.0210324749, 0, 0.81259048, 0)
-		warning3.Size = UDim2.new(0, 187, 0, 62)
-		warning3.Font = Enum.Font.SourceSans
-		warning3.Text = "Have a good day 2epeng! :)"
-		warning3.TextColor3 = Color3.fromRGB(255, 255, 255)
-		warning3.TextSize = 28.000
-		warning3.TextWrapped = true
-		warning3.TextXAlignment = Enum.TextXAlignment.Left
-		warning3.TextYAlignment = Enum.TextYAlignment.Top
+warning3.Position = UDim2.new(0.0210324749, 0, 0.81259048, 0)
+warning3.Size = UDim2.new(0, 187, 0, 62)
+warning3.Font = Enum.Font.SourceSans
+warning3.Text = "Have a good day 2epeng! :)"
+warning3.TextColor3 = Color3.fromRGB(255, 255, 255)
+warning3.TextSize = 28.000
+warning3.TextWrapped = true
+warning3.TextXAlignment = Enum.TextXAlignment.Left
+warning3.TextYAlignment = Enum.TextYAlignment.Top
 
-		-- Scripts:
+-- Scripts:
 
-		local function VANCY_fake_script() -- title.Script 
-			local script = Instance.new('Script', title)
-
-
-		end
-		coroutine.wrap(VANCY_fake_script)()
-		local function RXGYFHF_fake_script() -- Aimlock_2.LocalScript 
-			local script = Instance.new('LocalScript', Aimlock_2)
+local function VANCY_fake_script() -- title.Script 
+	local script = Instance.new('Script', title)
 
 
-		end
-		coroutine.wrap(RXGYFHF_fake_script)()
-	end)
 end
-coroutine.wrap(QGVSZD_fake_script)()
+coroutine.wrap(VANCY_fake_script)()
+local function RXGYFHF_fake_script() -- Aimlock_2.LocalScript 
+	local script = Instance.new('LocalScript', Aimlock_2)
+
+
+end
+coroutine.wrap(RXGYFHF_fake_script)()
