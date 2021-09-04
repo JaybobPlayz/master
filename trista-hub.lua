@@ -3,124 +3,134 @@
 
 -- Instances:
 
-local AimlockerGui = Instance.new("ScreenGui")
+local AimlocknMoreGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local title = Instance.new("TextLabel")
+local Aimlock = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
-local Aimlock = Instance.new("TextButton")
+local name = Instance.new("TextLabel")
+local Toggle = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
-local aimlockerStatus = Instance.new("Frame")
+local InfJump = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
-local hf = Instance.new("TextLabel")
-local status = Instance.new("TextLabel")
-local currentAccount = Instance.new("TextLabel")
+local name_2 = Instance.new("TextLabel")
+local Toggle_2 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
 
 --Properties:
 
-AimlockerGui.Name = "AimlockerGui"
-AimlockerGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-AimlockerGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+AimlocknMoreGui.Name = "AimlocknMoreGui"
+AimlocknMoreGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+AimlocknMoreGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 main.Name = "main"
-main.Parent = AimlockerGui
-main.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+main.Parent = AimlocknMoreGui
+main.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
 main.BorderSizePixel = 0
-main.Position = UDim2.new(0.8211236, 0, 0.346983582, 0)
-main.Size = UDim2.new(0, 226, 0, 285)
+main.Position = UDim2.new(0.262667269, 0, 0.846354187, 0)
+main.Size = UDim2.new(0, 648, 0, 77)
 
 UICorner.Parent = main
 
 title.Name = "title"
 title.Parent = main
-title.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
 title.BorderSizePixel = 0
-title.Position = UDim2.new(0.0336519778, 0, 0.0234501939, 0)
-title.Size = UDim2.new(0, 210, 0, 39)
+title.Position = UDim2.new(0.0169753078, 0, 0, 0)
+title.Size = UDim2.new(0, 625, 0, 26)
 title.Font = Enum.Font.GothamBold
-title.Text = "Trista Hub - [GAME]"
+title.Text = "Aimlock n' More - [GAME]"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
-title.TextSize = 18.000
+title.TextScaled = true
+title.TextSize = 14.000
 title.TextWrapped = true
-
-UICorner_2.Parent = title
 
 Aimlock.Name = "Aimlock"
 Aimlock.Parent = main
-Aimlock.BackgroundColor3 = Color3.fromRGB(97, 97, 97)
+Aimlock.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
 Aimlock.BorderSizePixel = 0
-Aimlock.Position = UDim2.new(0.0309734512, 0, 0.184418738, 0)
-Aimlock.Size = UDim2.new(0, 210, 0, 45)
-Aimlock.Font = Enum.Font.Highway
-Aimlock.Text = "Aimlock"
-Aimlock.TextColor3 = Color3.fromRGB(255, 255, 255)
-Aimlock.TextScaled = true
-Aimlock.TextSize = 14.000
-Aimlock.TextWrapped = true
+Aimlock.Position = UDim2.new(0.0169753078, 0, 0.435313821, 0)
+Aimlock.Size = UDim2.new(0, 287, 0, 32)
 
-UICorner_3.Parent = Aimlock
+UICorner_2.Parent = Aimlock
 
-aimlockerStatus.Name = "aimlockerStatus"
-aimlockerStatus.Parent = main
-aimlockerStatus.BackgroundColor3 = Color3.fromRGB(97, 97, 97)
-aimlockerStatus.BorderSizePixel = 0
-aimlockerStatus.Position = UDim2.new(0.0309734512, 0, 0.367937595, 0)
-aimlockerStatus.Size = UDim2.new(0, 210, 0, 100)
+name.Name = "name"
+name.Parent = Aimlock
+name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+name.BackgroundTransparency = 1.000
+name.BorderSizePixel = 0
+name.Position = UDim2.new(0.0380915739, 0, 0, 0)
+name.Size = UDim2.new(0, 189, 0, 32)
+name.Font = Enum.Font.PatrickHand
+name.Text = "Aimlock"
+name.TextColor3 = Color3.fromRGB(255, 255, 255)
+name.TextScaled = true
+name.TextSize = 14.000
+name.TextWrapped = true
+name.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_4.Parent = aimlockerStatus
+Toggle.Name = "Toggle"
+Toggle.Parent = Aimlock
+Toggle.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Toggle.BorderSizePixel = 0
+Toggle.Position = UDim2.new(0.891930759, 0, 0.226650238, 0)
+Toggle.Size = UDim2.new(0, 22, 0, 17)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = ""
+Toggle.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.TextSize = 14.000
 
-hf.Name = "hf"
-hf.Parent = aimlockerStatus
-hf.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-hf.BackgroundTransparency = 1.000
-hf.BorderSizePixel = 0
-hf.Position = UDim2.new(0.0333333351, 0, 0.092572324, 0)
-hf.Size = UDim2.new(0, 195, 0, 40)
-hf.Font = Enum.Font.Gotham
-hf.Text = "Aimlock is:"
-hf.TextColor3 = Color3.fromRGB(255, 255, 255)
-hf.TextScaled = true
-hf.TextSize = 14.000
-hf.TextWrapped = true
+UICorner_3.Parent = Toggle
 
-status.Name = "status"
-status.Parent = aimlockerStatus
-status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-status.BackgroundTransparency = 1.000
-status.BorderSizePixel = 0
-status.Position = UDim2.new(0.0380952395, 0, 0.492572337, 0)
-status.Size = UDim2.new(0, 195, 0, 40)
-status.Font = Enum.Font.Highway
-status.Text = "OFF"
-status.TextColor3 = Color3.fromRGB(255, 0, 0)
-status.TextScaled = true
-status.TextSize = 14.000
-status.TextWrapped = true
+InfJump.Name = "InfJump"
+InfJump.Parent = main
+InfJump.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+InfJump.BorderSizePixel = 0
+InfJump.Position = UDim2.new(0.538580239, 0, 0.422326803, 0)
+InfJump.Size = UDim2.new(0, 287, 0, 32)
 
-currentAccount.Name = "currentAccount"
-currentAccount.Parent = main
-currentAccount.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-currentAccount.BackgroundTransparency = 1.000
-currentAccount.BorderSizePixel = 0
-currentAccount.Position = UDim2.new(0.0530973449, 0, 0.738345921, 0)
-currentAccount.Size = UDim2.new(0, 197, 0, 65)
-currentAccount.Font = Enum.Font.SourceSans
-currentAccount.Text = "Current Account: [USER]"
-currentAccount.TextColor3 = Color3.fromRGB(255, 255, 255)
-currentAccount.TextScaled = true
-currentAccount.TextSize = 14.000
-currentAccount.TextWrapped = true
+UICorner_4.Parent = InfJump
+
+name_2.Name = "name"
+name_2.Parent = InfJump
+name_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+name_2.BackgroundTransparency = 1.000
+name_2.BorderSizePixel = 0
+name_2.Position = UDim2.new(0.0380915739, 0, 0, 0)
+name_2.Size = UDim2.new(0, 189, 0, 32)
+name_2.Font = Enum.Font.PatrickHand
+name_2.Text = "Infinite Jump"
+name_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+name_2.TextScaled = true
+name_2.TextSize = 14.000
+name_2.TextWrapped = true
+name_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Toggle_2.Name = "Toggle"
+Toggle_2.Parent = InfJump
+Toggle_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Toggle_2.BorderSizePixel = 0
+Toggle_2.Position = UDim2.new(0.891930759, 0, 0.226650238, 0)
+Toggle_2.Size = UDim2.new(0, 22, 0, 17)
+Toggle_2.Font = Enum.Font.SourceSans
+Toggle_2.Text = ""
+Toggle_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_2.TextSize = 14.000
+
+UICorner_5.Parent = Toggle_2
 
 -- Scripts:
 
-local function EFXRQ_fake_script() -- title.Script 
+local function EVXIV_fake_script() -- title.Script 
 	local script = Instance.new('Script', title)
 
-	script.Parent.Text = "Trista Hub - "..game.Name
+	script.Parent.Text = "Aimlock n' More - "..game.Name
 end
-coroutine.wrap(EFXRQ_fake_script)()
-local function ODRLYVH_fake_script() -- Aimlock.LocalScript 
-	local script = Instance.new('LocalScript', Aimlock)
+coroutine.wrap(EVXIV_fake_script)()
+local function OGFTOBD_fake_script() -- Toggle.LocalScript 
+	local script = Instance.new('LocalScript', Toggle)
 
 	_G.aimbot = false
 	local camera = game.Workspace.CurrentCamera
@@ -129,8 +139,7 @@ local function ODRLYVH_fake_script() -- Aimlock.LocalScript
 	script.Parent.MouseButton1Click:Connect(function()
 		if _G.aimbot == false then
 			_G.aimbot = true
-			script.Parent.Parent.aimlockerStatus.status.TextColor3 = Color3.fromRGB(0,255,0)
-			script.Parent.Parent.aimlockerStatus.status.Text = "ON"
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,0)
 			function closestplayer()
 				local dist = math.huge -- math.huge means a really large number, 1M+.
 				local target = nil --- nil means no value
@@ -151,8 +160,7 @@ local function ODRLYVH_fake_script() -- Aimlock.LocalScript
 	
 		else
 			_G.aimbot = false
-			script.Parent.Parent.aimlockerStatus.status.TextColor3 = Color3.fromRGB(255,0,0)
-			script.Parent.Parent.aimlockerStatus.status.Text = "OFF"
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,0)
 		end
 	end)
 	
@@ -181,12 +189,34 @@ local function ODRLYVH_fake_script() -- Aimlock.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ODRLYVH_fake_script)()
-local function FLJZXYI_fake_script() -- currentAccount.LocalScript 
-	local script = Instance.new('LocalScript', currentAccount)
+coroutine.wrap(OGFTOBD_fake_script)()
+local function TDMFT_fake_script() -- Toggle_2.LocalScript 
+	local script = Instance.new('LocalScript', Toggle_2)
 
-	local player = game:GetService("Players").LocalPlayer
+	local INFJUMP = script.Parent
 	
-	script.Parent.Text = "Current Account: "..player.Name
+	INFJUMP.MouseButton1Down:connect(function()
+		local Player = game:GetService'Players'.LocalPlayer;
+		local UIS = game:GetService'UserInputService';
+	
+		_G.JumpHeight = 50;
+	
+		local function Action(Object, Function) if Object ~= nil then Function(Object); end end
+		
+		INFJUMP.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		
+		UIS.InputBegan:connect(function(UserInput)
+			if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
+				Action(Player.Character.Humanoid, function(self)
+					if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
+						Action(self.Parent.HumanoidRootPart, function(self)
+							self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+						end)
+					end
+				end)
+			end
+			INFJUMP.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		end)
+	end)
 end
-coroutine.wrap(FLJZXYI_fake_script)()
+coroutine.wrap(TDMFT_fake_script)()
