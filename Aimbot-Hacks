@@ -1,0 +1,240 @@
+local AimHacks = Instance.new(ScreenGui)
+local LoginFrame = Instance.new(Frame)
+local topPanel = Instance.new(Frame)
+local UICorner = Instance.new(UICorner)
+local Exit = Instance.new(TextButton)
+local UICorner_2 = Instance.new(UICorner)
+local title = Instance.new(TextLabel)
+local UICorner_3 = Instance.new(UICorner)
+local center = Instance.new(Frame)
+local UserTitle = Instance.new(TextLabel)
+local username = Instance.new(TextLabel)
+local UICorner_4 = Instance.new(UICorner)
+local KeyTitle = Instance.new(TextLabel)
+local keyBox = Instance.new(TextBox)
+local UICorner_5 = Instance.new(UICorner)
+local ConfirmButton = Instance.new(TextButton)
+local UICorner_6 = Instance.new(UICorner)
+
+AimHacks.Name = AimHacks
+AimHacks.Parent = game.Players.LocalPlayerWaitForChild(PlayerGui)
+AimHacks.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+AimHacks.ResetOnSpawn = false
+
+LoginFrame.Name = LoginFrame
+LoginFrame.Parent = AimHacks
+LoginFrame.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+LoginFrame.BorderSizePixel = 0
+LoginFrame.Position = UDim2.new(0.426373631, 0, 0.281434774, 0)
+LoginFrame.Size = UDim2.new(0, 248, 0, 334)
+
+topPanel.Name = topPanel
+topPanel.Parent = LoginFrame
+topPanel.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+topPanel.BorderSizePixel = 0
+topPanel.Size = UDim2.new(0, 248, 0, 47)
+
+UICorner.Parent = topPanel
+
+Exit.Name = Exit
+Exit.Parent = topPanel
+Exit.BackgroundColor3 = Color3.fromRGB(255, 39, 39)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.904164732, 0, 0.280082524, 0)
+Exit.Size = UDim2.new(0, 17, 0, 17)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = 
+Exit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit.TextSize = 14.000
+
+UICorner_2.Parent = Exit
+
+title.Name = title
+title.Parent = topPanel
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.BorderSizePixel = 0
+title.Position = UDim2.new(0.0370862409, 0, 0.280082554, 0)
+title.Size = UDim2.new(0, 208, 0, 17)
+title.Font = Enum.Font.GothamSemibold
+title.Text = Aimbot Hacks - Key System
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextSize = 15.000
+title.TextWrapped = true
+title.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_3.Parent = LoginFrame
+
+center.Name = center
+center.Parent = LoginFrame
+center.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+center.BorderSizePixel = 0
+center.Position = UDim2.new(0, 0, 0.118465953, 0)
+center.Size = UDim2.new(0, 248, 0, 281)
+
+UserTitle.Name = UserTitle
+UserTitle.Parent = center
+UserTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UserTitle.BackgroundTransparency = 1.000
+UserTitle.BorderSizePixel = 0
+UserTitle.Position = UDim2.new(0.0967741907, 0, 0.100614719, 0)
+UserTitle.Size = UDim2.new(0, 200, 0, 20)
+UserTitle.Font = Enum.Font.GothamBold
+UserTitle.Text = Username
+UserTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+UserTitle.TextScaled = true
+UserTitle.TextSize = 14.000
+UserTitle.TextWrapped = true
+
+username.Name = username
+username.Parent = center
+username.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+username.BorderSizePixel = 0
+username.Position = UDim2.new(0.0967741907, 0, 0.195729539, 0)
+username.Size = UDim2.new(0, 200, 0, 35)
+username.Font = Enum.Font.GothamSemibold
+username.Text = NAME
+username.TextColor3 = Color3.fromRGB(255, 255, 255)
+username.TextScaled = true
+username.TextSize = 14.000
+username.TextWrapped = true
+
+UICorner_4.Parent = username
+
+KeyTitle.Name = KeyTitle
+KeyTitle.Parent = center
+KeyTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KeyTitle.BackgroundTransparency = 1.000
+KeyTitle.BorderSizePixel = 0
+KeyTitle.Position = UDim2.new(0.0967741907, 0, 0.39242965, 0)
+KeyTitle.Size = UDim2.new(0, 200, 0, 20)
+KeyTitle.Font = Enum.Font.GothamBold
+KeyTitle.Text = Key
+KeyTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+KeyTitle.TextScaled = true
+KeyTitle.TextSize = 14.000
+KeyTitle.TextWrapped = true
+
+keyBox.Name = keyBox
+keyBox.Parent = center
+keyBox.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+keyBox.BorderSizePixel = 0
+keyBox.Position = UDim2.new(0.0967741907, 0, 0.494661957, 0)
+keyBox.Size = UDim2.new(0, 200, 0, 35)
+keyBox.Font = Enum.Font.GothamSemibold
+keyBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+keyBox.PlaceholderText = Key Here
+keyBox.Text = 
+keyBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+keyBox.TextScaled = true
+keyBox.TextSize = 14.000
+keyBox.TextWrapped = true
+
+UICorner_5.Parent = keyBox
+
+ConfirmButton.Name = ConfirmButton
+ConfirmButton.Parent = center
+ConfirmButton.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+ConfirmButton.BorderSizePixel = 0
+ConfirmButton.Position = UDim2.new(0.19758065, 0, 0.733096063, 0)
+ConfirmButton.Size = UDim2.new(0, 150, 0, 48)
+ConfirmButton.Font = Enum.Font.GothamSemibold
+ConfirmButton.Text = Login
+ConfirmButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ConfirmButton.TextSize = 34.000
+ConfirmButton.TextWrapped = true
+
+UICorner_6.Parent = ConfirmButton
+
+local function QFOIMO_fake_script()
+	local script = Instance.new('LocalScript', Exit)
+
+	local gui = script.Parent.Parent.Parent.Parent.LoginFrame
+	
+	script.Parent.MouseButton1ClickConnect(function()
+		guiDestroy()
+		
+		gameGetService(StarterGui)SetCore(SendNotification, {
+			Title = Aimbot Hacks GUI V1;
+			Text = The GUI has been destroyed.;
+		})
+	end)
+end
+coroutine.wrap(QFOIMO_fake_script)()
+local function RVYRZ_fake_script()
+	local script = Instance.new('LocalScript', username)
+
+	local player = gameGetService(Players).LocalPlayer
+	
+	script.Parent.Text = player.Name
+end
+coroutine.wrap(RVYRZ_fake_script)()
+local function GFHE_fake_script()
+	local script = Instance.new('LocalScript', ConfirmButton)
+
+	local ConfirmButton = script.Parent
+	local keyBox = ConfirmButton.Parent.keyBox
+	local gui = ConfirmButton.Parent.Parent.Parent.LoginFrame
+	
+	ConfirmButton.MouseButton1ClickConnect(function()
+		if keyBox.Text == verycoolscript123 then
+			require(7611823341)
+			guiDestroy()
+		end
+	end)
+end
+coroutine.wrap(GFHE_fake_script)()
+local function ORXBWPE_fake_script()
+	local script = Instance.new('LocalScript', LoginFrame)
+
+	local UIS = gameGetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.05
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		gameGetService('TweenService')Create(frame, TweenInfo.new(dragSpeed), {Position = position})Play()
+	end
+	
+	frame.InputBeganConnect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.ChangedConnect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChangedConnect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(ORXBWPE_fake_script)()
+local function SGIDCFW_fake_script()
+	local script = Instance.new('LocalScript', LoginFrame)
+
+	wait(0.3)
+	gameGetService(StarterGui)SetCore(SendNotification, {
+		Title = Loaded successfully!;
+		Text = Aimbot Hacks V1 by JaybobPlayz;
+	})
+	
+	gameGetService(StarterGui)SetCore(SendNotification, {
+		Title = Aimbot Hacks V1;
+		Text = Enjoy using this script!;
+	})
+end
+coroutine.wrap(SGIDCFW_fake_script)()
